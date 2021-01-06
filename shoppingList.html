@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list</title>
+</head>
+<style>
+    .form1 {
+        width: 550px;
+        border: 1px solid black;
+        background-color: rgb(156, 194, 196);
+    }
+
+    .gifts {
+        width: 550px;
+        border: 2px solid rgb(89, 89, 223);
+        background-color: cadetblue;
+    }
+
+    legend {
+        display: block;
+        position: relative;
+        border: 2px solid rgb(89, 89, 223);
+        bottom: 10px;
+        left: 20px;
+        background-color: cadetblue;
+        text-align: center;
+        color: cornsilk;
+        width: 250px;
+    }
+
+    li {
+        color: rgb(114, 32, 190);
+    }
+
+    h1,
+    h2 {
+        color: blueviolet;
+    }
+
+    li ul {
+        list-style-type: none;
+    }
+
+    div {
+        color: white;
+        margin: 20px;
+    }
+
+    .buttonColor {
+        background-color: cadetblue;
+        border: 2px solid rgb(89, 89, 223);
+        color: white;
+    }
+
+    #seletColor {
+        color: rgb(39, 129, 133);
+    }
+</style>
+
+<body>
+    <h1>Список покупок на Новий рік</h1>
+    <h2>Товари для святкових страв</h2>
+
+    <!--Shopping list for dishes-->
+    <form action="" class="form1">
+        <ol>
+            <li><b>Овочі</b>
+                <ul>
+                    <li></li><input type="checkbox" name="list" value="Морква">
+                    <i>Морква</i>
+            </li>
+            <li><input type="checkbox" name="list" value="Лук"><i>Лук</i></li>
+            <li><input type="checkbox" name="list" value="Картопля"><i>Картопля</i></li>
+            <li><input type="checkbox" name="list" value="ЗеленийГорошок"><i>Зелений горошок</i></li>
+            </ul>
+            </li>
+            <li><b>Ковбаса</b></li>
+            <li><b>Олія</b></li>
+            <li><b>Зелень</b></li>
+            <li><b>Мука</b></li>
+            <li><b>Цукор</b></li>
+            <li><b>Вершки</b></li>
+            <li><b>Горіхи</b></li>
+            <li><b>Яйця</b></li>
+            <li><b>Овочі</b></li>
+            <li><b>Напої</b>
+                <ul>
+                    <li><input type="checkbox" name="beverages" value="ВиноБіле">
+                        <i>Вино біле сухе</i>
+                    </li>
+                    <li><input type="checkbox" name="beverages" value="ВиноЧервоне">
+                        <i>Вино червоне напівсолодке</i>
+                    </li>
+                    <li><input type="checkbox" name="beverages" value="Шампанське">
+                        <i>Шампанське</i>
+                    </li>
+                    <li><input type="checkbox" name="beverages" value="СікТоматний">
+                        <i>Сік томатний</i>
+                    </li>
+                    <li><input type="checkbox" name="beverages" value="СікВиноградний">
+                        <i>Сік виноградний</i>
+                    </li>
+
+                </ul>
+            </li>
+        </ol>
+    </form>
+
+    <!--Shopping list for gifts-->
+    <h2>Вибір дарунків</h2>
+
+    <form action="#" method="POST" enctype="multipart/form-data" class="gifts">
+        <legend>Заказ дарунків на сайті</legend>
+        <fieldset>
+            <div>
+                <label for="">Основний дарунок</label>
+                <select name="" id="seletColor">
+                    <option value="">Оберить товар</option>
+                    <option value="">Конструтор</option>
+                    <option value="">Пазли</option>
+                    <option value="">Набір для малювання</option>
+                    <option value="">Радіокерований автомобіль</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="">Солодкий дарунок</label>
+                <select name="" id="seletColor">
+                    <option value="">Оберить товар</option>
+                    <option value="">Дарунок "Рошен"</option>
+                    <option value="">Дарунок "АВК"</option>
+                    <option value="">Дарунок "Світоч"</option>
+                </select>
+            </div>
+        </fieldset>
+
+
+        <div>
+            <label for="yourName">Ваше ім'я</label>
+            <input type="text" name="yourName" required id="selectColor">
+        </div>
+        <div>
+            <label for="email">Ваш е-mail</label>
+            <input type="email" name="email" id="selectColor" required>
+        </div>
+        <div class="payment">
+            <label> Спосіб оплати</label>
+            <p><input type="radio" name="pay" value="Готівка">Готівка</p>
+            <p><input type="radio" name="pay" value="Катрка">Катрка бaнку</p>
+        </div>
+        <input type="submit" name="submit" value="Відправити" class="buttonColor">
+        <input type="reset" name="reset" value="Відмінити" class="buttonColor">
+    </form>
+
+</body>
+
+</html>
